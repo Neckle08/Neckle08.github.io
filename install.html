@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>설치 하는법</title>
+  <style>
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    body, html {
+      font-family: 'Arial', sans-serif;
+      height: 100%;
+      background-color: #f4f4f4;
+    }
+
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+    nav .logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .container {
+      margin-top: 100px;
+      padding: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    ol {
+      font-size: 1.1rem;
+      color: #333;
+      margin-left: 20px;
+    }
+
+    ol li {
+      margin-bottom: 10px;
+    }
+
+
+    video {
+      width: 100%;
+      max-width: 800px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p, ol {
+        font-size: 1rem;
+      }
+
+      video {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="AElogo.png" alt="AE 로고">
+      </a>
+    </div>
+    <ul>
+      <li><a href="install.html">설치 하는법</a></li>
+      <li><a href="interface.html">화면 설명</a></li>
+      <li><a href="motiongraph.html">모션그래프</a></li>
+      <li><a href="effect.html">효과 설명</a></li>
+      <li><a href="render.html">랜더링</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="container">
+    <h1>설치하는 법</h1>
+    <p>여기서는 After Effects를 설치하는 방법을 단계별로 설명합니다. 아래 단계를 따라 설치를 완료하세요:</p>
+    
+    <ol>
+      <li>인터넷에서 <strong>Adobe.com</strong>을 검색합니다.</li>
+      <li><strong>Creative Cloud</strong>를 다운로드합니다.</li>
+      <li>상단의 <strong>구매하기</strong> 버튼을 클릭합니다.</li>
+      <li>플랜 및 가격에서 원하는 플랜을 선택하고 결제합니다.</li>
+      <li>이후 <strong>Creative Cloud</strong>에서 After Effects를 설치합니다.</li>
+      <li>설치가 완료되면 프로그램을 <strong>실행</strong>합니다.</li>
+    </ol>
+    
+    <p>설치 중 문제가 발생하면 고객 지원팀에 문의하거나 설치 가이드를 다시 확인하세요.</p>
+
+
+    <video controls>
+      <source src="AEinstrall.mp4" type="video/mp4">
+    </video>
+    
+  </div>
+
+</body>
+</html>

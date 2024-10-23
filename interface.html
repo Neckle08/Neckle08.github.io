@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>화면 설명</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* 기본 설정 */
+    body, html {
+      font-family: 'Arial', sans-serif;
+      height: 100%;
+      background-color: #f4f4f4;
+    }
+
+    /* 네비게이션 바 */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5); /* 반투명 검정 */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+    /* 로고 이미지 스타일 (클릭 시 메인 페이지 이동) */
+    nav .logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+
+    .container {
+      margin-top: 100px;
+      padding: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+
+    .interface-image {
+      width: 100%;
+      max-width: 800px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-list {
+      margin-top: 30px;
+    }
+
+    .feature-list li {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .interface-image {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="AElogo.png" alt="AE 로고">
+      </a>
+    </div>
+    <ul>
+      <li><a href="install.html">설치 하는법</a></li>
+      <li><a href="interface.html">화면 설명</a></li>
+      <li><a href="motiongraph.html">모션그래프</a></li>
+      <li><a href="effect.html">효과 설명</a></li>
+      <li><a href="render.html">랜더링</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>After Effects 화면 설명</h1>
+    <p>After Effects의 주요 패널 및 기능들을 아래 이미지와 함께 설명합니다.</p>
+
+
+    <img src="AEpanal.png" alt="After Effects 화면" class="interface-image">
+
+
+    <ul class="feature-list">
+      <li><strong>1. 프로젝트 패널:</strong> 프로젝트에서 사용할 모든 미디어 파일, 컴포지션 등을 관리하는 패널입니다. 미디어를 불러와서 컴포지션에 사용할 수 있습니다.</li>
+      <li><strong>2. 컴포지션 패널:</strong> 실제 작업이 이루어지는 패널입니다. 여기서 타임라인에 추가된 요소들을 시각적으로 확인하고 편집할 수 있습니다.</li>
+      <li><strong>3. 타임라인 패널:</strong> 미디어 요소와 애니메이션의 시간을 조정하는 패널입니다. 각 레이어의 순서를 바꾸고 애니메이션을 설정할 수 있습니다.</li>
+      <li><strong>4. 툴바:</strong> 다양한 도구들이 모여있는 툴바입니다. 텍스트 입력, 쉐이프 그리기, 이동 도구 등을 사용할 수 있습니다.</li>
+      <li><strong>5. 이펙트 및 프리셋 패널:</strong> 각종 효과와 프리셋을 검색하고 미디어 요소에 적용할 수 있는 패널입니다.</li>
+      <li><strong>6. 타임코드 및 재생 컨트롤:</strong> 프로젝트의 현재 시간을 확인하고, 재생 및 일시 정지, 프레임 이동 등을 할 수 있습니다.</li>
+    </ul>
+  </div>
+
+</body>
+</html>

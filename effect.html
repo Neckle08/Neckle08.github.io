@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>효과 설명</title>
+  <style>
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+
+    video {
+      width: 100%;
+      max-width: 800px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+    body, html {
+      font-family: 'Arial', sans-serif;
+      height: 100%;
+      background-color: #f4f4f4;
+    }
+
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+
+    nav .logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+
+    .container {
+      margin-top: 100px;
+      padding: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    
+    .effect-example {
+      width: 100%;
+      max-width: 800px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .effect-example {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="AElogo.png" alt="AE 로고">
+      </a>
+    </div>
+    <ul>
+      <li><a href="install.html">설치 하는법</a></li>
+      <li><a href="interface.html">화면 설명</a></li>
+      <li><a href="motiongraph.html">모션그래프</a></li>
+      <li><a href="effect.html">효과 설명</a></li>
+      <li><a href="render.html">랜더링</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="container">
+    <h1>효과 설명</h1>
+    <p>After Effects의 다양한 효과는 동영상과 그래픽에 생동감을 더하는 데 필수적인 도구입니다. 여기서는 주요 효과와 프리셋의 사용법을 설명합니다.</p>
+
+    <p>효과 및 프리셋 패널에서 다양한 효과를 검색하여 적용할 수 있습니다. 아래 예시는 대표적인 효과들을 보여줍니다.</p>
+
+    <video controls>
+        <source src="EF.mp4" type="video/mp4">
+      </video>
+
+    <h2>대표적인 효과</h2>
+    <ul>
+      <li><strong>Blur & Sharpen (블러 및 선명화):</strong> 블러(흐림) 효과를 사용하여 영상의 특정 부분을 부드럽게 하거나, Sharpen(선명화)을 통해 더 선명하게 만들 수 있습니다.</li>
+      <li><strong>Color Correction (색 보정):</strong> 영상의 색감을 조정하여 원하는 분위기를 연출할 수 있습니다. Curves(곡선), Brightness & Contrast(밝기 및 대비) 등의 도구를 사용합니다.</li>
+      <li><strong>Keying (키잉):</strong> 크로마키 기법을 통해 녹색 배경을 제거하거나, 특정 색을 선택하여 제거하는 기능입니다.</li>
+      <li><strong>Distort (왜곡):</strong> 영상이나 그래픽을 왜곡하여 독특한 비주얼 효과를 줄 수 있습니다. Liquify(액화), Bulge(팽창) 등의 효과를 사용할 수 있습니다.</li>
+      <li><strong>Transition (전환 효과):</strong> 한 장면에서 다른 장면으로 부드럽게 전환하기 위한 효과입니다. Dissolve(디졸브), Slide(슬라이드) 등의 효과를 사용할 수 있습니다.</li>
+    </ul>
+  </div>
+
+</body>
+</html>

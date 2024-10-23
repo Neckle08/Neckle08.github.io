@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>랜더링</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: 'Arial', sans-serif;
+      height: 100%;
+      background-color: #f4f4f4;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+    nav .logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .container {
+      margin-top: 100px;
+      padding: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 20px;
+      color: #333;
+    }
+
+    ul {
+      margin-top: 10px;
+      margin-left: 20px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .render-image {
+      width: 100%;
+      max-width: 800px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p, ul {
+        font-size: 1rem;
+      }
+
+      .render-image {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="AElogo.png" alt="AE 로고">
+      </a>
+    </div>
+    <ul>
+      <li><a href="install.html">설치 하는법</a></li>
+      <li><a href="interface.html">화면 설명</a></li>
+      <li><a href="motiongraph.html">모션그래프</a></li>
+      <li><a href="effect.html">효과 설명</a></li>
+      <li><a href="render.html">랜더링</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>랜더링</h1>
+    <p>After Effects에서 작업한 프로젝트를 최종적으로 랜더링하여 출력하는 방법을 설명합니다. 랜더링은 프로젝트를 동영상 파일로 출력하거나, 여러 형식으로 저장하는 과정입니다.</p>
+
+    <h2>랜더링 과정</h2>
+    <ul>
+      <li><strong>1. 랜더 큐에 추가:</strong> 작업이 완료된 후 <strong>Composition</strong> 메뉴에서 <strong>Add to Render Queue</strong>를 선택합니다.</li>
+      <img src="1.png" alt="랜더 큐에 추가" class="render-image">
+
+      <li><strong>2. 출력 설정:</strong> 랜더 큐 창에서 <strong>Output Module</strong>을 선택해 출력 형식을 설정합니다. MP4, AVI 등 다양한 형식으로 저장할 수 있습니다.</li>
+      <img src="2.png" alt="출력 설정" class="render-image">
+
+      <li><strong>3. 저장 경로 선택:</strong> <strong>Output To</strong> 옵션을 클릭해 파일을 저장할 위치를 지정합니다.</li>
+      <img src="3.png" alt="저장 경로 선택" class="render-image">
+
+      <li><strong>4. 랜더링 시작:</strong> 모든 설정이 완료되면 <strong>Render</strong> 버튼을 클릭하여 랜더링을 시작합니다.</li>
+      <img src="4.png" alt="랜더링 시작" class="render-image">
+    </ul>
+
+    <h2>랜더링 옵션</h2>
+    <ul>
+      <li><strong>Resolution (해상도):</strong> 원하는 해상도로 랜더링을 설정할 수 있습니다. 고해상도일수록 더 많은 시간이 소요될 수 있습니다.</li>
+      <li><strong>Frame Rate (프레임 속도):</strong> 초당 프레임 수를 설정하여 부드러운 영상을 만들 수 있습니다. 일반적으로 24fps, 30fps를 사용합니다.</li>
+      <li><strong>Output Format (출력 형식):</strong> 영상 형식을 설정합니다. MP4는 일반적으로 많이 사용되며, 무압축 형식은 품질이 더 좋습니다.</li>
+    </ul>
+
+    <p>랜더링 과정이 완료되면 선택한 경로에 파일이 저장됩니다. 출력된 파일을 확인하고, 필요시 추가 편집을 진행할 수 있습니다.</p>
+  </div>
+
+</body>
+</html>
